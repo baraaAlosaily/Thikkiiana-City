@@ -3,7 +3,7 @@ import { GoogleLogout } from "react-google-login";
 import { useNavigate } from 'react-router-dom';
 import { useAppContext } from '../context/appContext';
 
-const clientId="937675287215-pbmcl7780opsoqesr6o820bsjjbghd23.apps.googleusercontent.com"
+const clientId=process.env.REACT_APP_CLIENT_KEY
 
 
 const LogoutButton = () => {
@@ -16,7 +16,7 @@ const LogoutButton = () => {
         console.log("LOGOUT SUCCESS")
         localStorage.removeItem("user");
         removeUser();
-        navigate("/landing")
+        navigate("/")
       
     }
 

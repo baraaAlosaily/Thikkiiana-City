@@ -34,7 +34,7 @@ import {
 
       const {search}=state;
   
-      let url=`https://wookie.codesubmit.io/movies`;
+      let url=process.env.REACT_APP_API;
 
       if(search){
         url+=`?q=${search}`;
@@ -43,7 +43,7 @@ import {
       dispatch({type:GET_MOVIES_BEGIN})
       try {
         const {data}=await axios.get(url,{
-            headers: { Authorization:`Bearer Wookie2021`}
+            headers: { Authorization:process.env.REACT_APP_TOKEN}
         });
         const {movies}=data
         console.log(movies)

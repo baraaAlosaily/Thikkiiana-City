@@ -8,7 +8,7 @@ import LoginButton from "../components/LoginButton";
 import { useEffect } from "react";
 import { gapi } from "gapi-script";
 
-const clientId="937675287215-pbmcl7780opsoqesr6o820bsjjbghd23.apps.googleusercontent.com"
+const clientId=process.env.REACT_APP_CLIENT_KEY
 
 
 const Landing = () => {
@@ -17,8 +17,7 @@ const Landing = () => {
     function start(){
       gapi.client.init({
         clientId:clientId,
-        apiKey:"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",
-        scope:"https://www.googleapis.com/auth/drive.metadata.readonly"
+        scope:""
       })
     }
     gapi.load('client:auth2',start);
