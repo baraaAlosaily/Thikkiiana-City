@@ -1,0 +1,30 @@
+.navbar{
+   .container-fluid{
+    padding: 1rem 3rem 1rem 3rem;
+    .navbar-brand {
+        color: white;
+        font-family: 'Roboto', sans-serif; 
+    }
+   }
+   .nav-link {
+    color: white;
+   }
+   .navbar-collapse{
+    justify-content: flex-end;
+   }
+   .me-2{
+     font-family: 'Roboto', sans-serif; 
+   }
+}
+
+.navbar__user--info{
+    margin: 0 1rem 0 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    img{
+        border-radius: 50%;
+        width: 3rem;
+    }
+}

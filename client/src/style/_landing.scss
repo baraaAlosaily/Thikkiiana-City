@@ -1,0 +1,65 @@
+
+.landingPage{
+    &__container{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin: 15% 10% 20% 10%;
+        gap: 2rem;
+        &--title{
+           font-size: 2rem;
+           font-weight: 700;
+           font-family: 'Roboto', sans-serif;
+        }
+        &__main{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 75%;
+           gap: 2rem;
+           &__desc{
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            p{
+                font-size: 1rem;
+                font-family: 'Roboto', sans-serif; 
+                line-height: 1.5rem;
+            }
+       
+           }
+           &__image{
+            img{
+                width: 20rem;
+            }
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+           }
+        }
+
+        &__button{
+            background-color: #ff0050;
+            width: 8rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            &--element{
+               font-weight: 700;
+               font-size: 1rem;
+               border: none;
+               cursor: pointer;
+               text-decoration: none;
+               font-family: 'Roboto', sans-serif; 
+               color: #fff;
+               &:hover{
+                color: gray;
+               }
+            }
+        }
+       }
+}

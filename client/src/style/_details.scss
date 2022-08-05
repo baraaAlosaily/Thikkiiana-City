@@ -1,0 +1,43 @@
+.details{
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ margin: 10% 10% 10% 10%; 
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        &--image{
+            img{
+                width: 100%;
+            }
+        }
+        &--details{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            &--title{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 2rem;
+                section{
+                    img{
+                        width: 2rem;
+                    }
+                }
+
+            }
+            h2{
+                font-weight: 700;
+                font-family: 'Roboto', sans-serif; 
+                font-size: 2rem;
+            }
+            p{
+                font-family: 'Roboto', sans-serif; 
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
