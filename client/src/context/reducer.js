@@ -8,7 +8,6 @@ import {
     REMOVE_USER_SUCCESS
    } from "./action"
 
-import { initialState } from "./appContext"
 
 const reducer=(state,action)=>{
    if(action.type===GET_MOVIES_BEGIN){

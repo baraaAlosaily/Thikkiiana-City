@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import { useEffect } from 'react';
 import { useAppContext } from '../context/appContext';
@@ -8,7 +9,6 @@ import { Navigate } from 'react-router-dom';
 
 const Details = () => {
   const {id} =useParams();
-  console.log(id)
   const {getMovies,movies,user}=useAppContext();
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Details = () => {
      <section className='details'>
      <section className='details__container'>
       <section className='details__container--image'>
-        <img src={movieData.length>0&&movieData[0].poster} alt="" />
+        <img src={movieData.length>0&&movieData[0].poster} alt={movieData.length>0&&movieData[0].title} />
       </section>
       <section className='details__container--details'>
        <section  className='details__container--details--title'>

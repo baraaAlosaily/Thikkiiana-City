@@ -7,7 +7,6 @@ import {
   HANDLE_CHANGE,
   SETUP_USER_BEGIN,
   SETUP_USER_SUCCESS,
-  SETUP_USER_ERROR,
   REMOVE_USER_BEGIN,
   REMOVE_USER_SUCCESS
 } from "./action";
@@ -46,7 +45,6 @@ import {
             headers: { Authorization:process.env.REACT_APP_TOKEN}
         });
         const {movies}=data
-        console.log(movies)
         dispatch({type:GET_MOVIES_SUCCESS,payload:{
             ...state,
             movies
@@ -75,7 +73,6 @@ import {
     }
 
     const handleChange=(value)=>{
-      console.log(value)
       dispatch({type:HANDLE_CHANGE,payload:{
         ...state,
         value}});
@@ -100,4 +97,4 @@ import {
     return useContext(AppContext);
   };
   
-  export { AppProvider, initialState, useAppContext };
+  export { AppProvider, initialState, useAppContext ,AppContext};

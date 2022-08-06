@@ -41,14 +41,18 @@
         }
 
         &__button{
-            background-color: #ff0050;
-            width: 8rem;
-            height: 2rem;
+            width: 20rem;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 0.5rem;
+            justify-content: flex-start;
+            gap: 2rem;
             &--element{
+               background-color: #ff0050;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               border-radius: 0.2rem;
+               height: 2.5rem;
+               width: 8rem;
                font-weight: 700;
                font-size: 1rem;
                border: none;
@@ -56,6 +60,7 @@
                text-decoration: none;
                font-family: 'Roboto', sans-serif; 
                color: #fff;
+               box-shadow: 1px 2px #888888;
                &:hover{
                 color: gray;
                }

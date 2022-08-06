@@ -10,13 +10,20 @@ const Container = () => {
     useEffect(() => {
        getMovies();
     }, [search])
-    console.log(movies);
 
     const actionMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Action"));
     const crimeMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Crime"));
     const dramaMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Drama"));
     const biographyMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Biography"));
     const historyMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("History"));
+    const mysteryMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Mystery"));
+    const thrillerMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Thriller"));
+    const adventureMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Adventure"));
+    const warMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("War"));
+    const sciFiMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Sci-Fi"));
+    const familyMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Family"));
+    const animationMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Animation"));
+    const romanceMovies=movies.length>0&&movies.filter(ele=> ele.genres.includes("Romance"));
 
 
   return (
@@ -47,6 +54,46 @@ const Container = () => {
             <h2 className='containerCards--title'>History</h2>
             {
             <Cards movies={historyMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>Mystery</h2>
+            {
+            <Cards movies={mysteryMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>Thriller</h2>
+            {
+            <Cards movies={thrillerMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>Adventure</h2>
+            {
+            <Cards movies={adventureMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>War</h2>
+            {
+            <Cards movies={warMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>Sci-Fi</h2>
+            {
+            <Cards movies={sciFiMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>Family</h2>
+            {
+            <Cards movies={familyMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>Animation</h2>
+            {
+            <Cards movies={animationMovies}/>
+            }
+            <hr />
+            <h2 className='containerCards--title'>Romance</h2>
+            {
+            <Cards movies={romanceMovies}/>
             }
            </>
         }

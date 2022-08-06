@@ -1,5 +1,5 @@
 import React from "react";
-import { Link,NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import cinima from "../assets/undraw_home_cinema_l7yl.svg";
 
 
@@ -40,7 +40,7 @@ const Landing = () => {
             </p>
           </section>
           <section className="landingPage__container__main__image">
-            <img src={cinima} alt="" />
+            <img src={cinima} alt="landing" />
           </section>
         </section>
         <section className="landingPage__container__button">
@@ -54,9 +54,6 @@ const Landing = () => {
          >
           Go To Home {" "}&gt;
         </NavLink>
-
-        </section>
-        <section>
         <LoginButton/>
         </section>
       </section>
