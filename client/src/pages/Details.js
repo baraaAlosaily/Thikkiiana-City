@@ -30,7 +30,7 @@ const Details = () => {
   return (
     <>
     {
-      !user&&<Navigate to="/landing" />
+      !user&&<Navigate to="/" />
     }
      <NavbarComponent/>
      <section className='details'>

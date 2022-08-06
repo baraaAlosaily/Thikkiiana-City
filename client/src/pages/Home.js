@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
     {
-      !user?<Navigate to="/landing" />:(
+      !user?<Navigate to="/" />:(
         <>
         <NavbarComponent/>
         <Container/>

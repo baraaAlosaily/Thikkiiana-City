@@ -1,0 +1,19 @@
+.error{
+    padding: 10% 10% 10% 10%;
+    img{
+        width: 60%;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    h2{
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: #d63384;
+    }
+}
