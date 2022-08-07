@@ -9,6 +9,7 @@
 - You have to change `.env.example` to `.env`
 - Run the following command to run the code `yarn start`
 - To run the test you have to run the following command `yarn test` or `npm test`
+- Also regrding to the css I create it by using css so you just have to install sass live extention also it the dist folder created out side of the src folder you   have to move it inside src folder
 
 
 ## Demo

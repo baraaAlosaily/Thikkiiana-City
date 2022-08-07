@@ -1,0 +1,243 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.landingPage__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15% 10% 20% 10%;
+  gap: 2rem;
+}
+.landingPage__container--title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.landingPage__container__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  gap: 2rem;
+}
+.landingPage__container__main__desc {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.landingPage__container__main__desc p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+}
+.landingPage__container__main__image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.landingPage__container__main__image img {
+  width: 20rem;
+}
+.landingPage__container__button {
+  width: 20rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.landingPage__container__button--element {
+  background-color: #ff0050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  width: 8rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  box-shadow: 1px 2px #888888;
+}
+.landingPage__container__button--element:hover {
+  color: gray;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar .container-fluid {
+  padding: 1rem 3rem 1rem 3rem;
+}
+.navbar .container-fluid .navbar-brand {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.navbar .nav-link {
+  color: white;
+}
+.navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar .me-2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar__user--info {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navbar__user--info img {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.containerCards {
+  margin: 5%;
+}
+.containerCards__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.containerCards__container__singleContainer {
+  background-color: #E0E0E0;
+  border-radius: 0.5rem;
+}
+.containerCards__container__singleContainer--image {
+  width: 100%;
+}
+.containerCards__container__singleContainer--details {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+.containerCards__container__singleContainer--details p {
+  font-family: "Roboto", sans-serif;
+}
+.containerCards__container__singleContainer--details h1 {
+  font-family: "Roboto", sans-serif;
+}
+.containerCards--title {
+  margin: 1rem 0 1rem 0;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 10% 10% 10%;
+}
+.details__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.details__container--image img {
+  width: 100%;
+}
+.details__container--details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.details__container--details--title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.details__container--details--title section img {
+  width: 2rem;
+}
+.details__container--details h2 {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+.details__container--details p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.error {
+  padding: 10% 10% 10% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.error img {
+  width: 60%;
+}
+.error h2 {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.error a {
+  text-decoration: none;
+  color: #d63384;
+}/*# sourceMappingURL=main.css.map */
