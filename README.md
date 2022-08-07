@@ -16,20 +16,20 @@
 
 ### Landing page
 
-![landing](./src/assets/movies_landing.png)
+![landing](./client/src/assets/movies_landing.png)
 
 ### Sign in
 
-![sign_in](./src/assets/movies_signIn.png)
+![sign_in](./client/src/assets/movies_signIn.png)
 
 ### Main page
 
-![main](./src/assets/movies_main.png)
+![main](./client/src/assets/movies_main.png)
 
 ### Search page
 
-![search](./src/assets/movies_search.png)
+![search](./client/src/assets/movies_search.png)
 
 ### Details
 
-![details](./src/assets/movies_details.png)
+![details](./client/src/assets/movies_details.png)
